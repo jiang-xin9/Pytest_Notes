@@ -248,7 +248,7 @@ PASSED
 ```
 ## 乱码问题
 有些人的情况或许跟我一样，pytest.ini输入的中文是乱码或者读取出来的是乱码，这时候可以在设置中的：
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/25452484/1672388670297-14a61c9d-beb4-48f8-b179-7b6cf2c09f47.png#clientId=u244a827c-0253-4&from=paste&height=374&id=uc6e7b32e&name=image.png&originHeight=468&originWidth=749&originalType=binary&ratio=1&rotation=0&showTitle=false&size=26701&status=done&style=none&taskId=u5786f2e6-12b3-419f-a792-888aee48163&title=&width=599.2)
+![输入图片说明](images/image5-1.png)
 修改成GBK即可。
 # 小结
 关于并未完全讲完的一些参数可以来这里直接CTRL + F搜索：[https://www.osgeo.cn/pytest/reference.html#ini-options-ref](https://www.osgeo.cn/pytest/reference.html#ini-options-ref)
