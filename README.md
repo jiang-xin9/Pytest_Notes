@@ -3,35 +3,52 @@
 #### 介绍
 个人学习的Pytest笔记，直译官网+个人实践+源码修改+测试报告修改
 
-#### 软件架构
-软件架构说明
+#### 作者：清安
+
+#### 安装
+```python
+pip install -U pytest
+```
+#### 测试安装
+```python
+import pytest
+
+class Testlogin:
+    def test01(self):
+        print(1)
+
+if __name__ == '__main__':
+    pytest.main()
+"""
+testone.py::Testlogin::test01 PASSED                                     [100%]1
+"""
+```
+或者
+```python
+pytest --version # 显示pytest是从哪里导入的
+
+pytest --fixtures # 显示可用的内建函数参数
+
+pytest -h | --help # 在命令行上显示帮助和配置文件选项
+
+```
+#### 插件介绍
+> pip install pytest-ordering 控制用例的执行顺序（重点） 
+
+> pip install pytest-xdist 分布式并发执行测试用例（重点） 
+
+> pip install pytest-dependency 控制用例的依赖关系 （了解） 
+
+> pip install pytest-rerunfailures 失败重跑（了解） 
+
+> pip install pytest-assume 多重较验（了解） 
+
+> pip install pytest-random-order 用例随机执行（了解） 
+
+> pip install pytest-html 测试报告（了解） 
+
+> pip install allure-pytest 测试报告（重点） 
+
+> pip install pytest-reportlog 测试报告（了解）  
 
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
