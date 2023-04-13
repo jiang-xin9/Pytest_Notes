@@ -200,8 +200,11 @@ PASSED
 用例检测这里，如果你写了py，class，function，那么它会看着这样的逻辑进行检测，如果python_files都没有检测到了，剩下的python_classes以及python_functions也就不能进行了。其次是python_classes如果有则优先检测，如果没有则检测python_functions。
 ## 自定义标志
 > 1. pytest.ini 中最好不要用中文，如果使用的话，大家要将文件编码改成 gbk
+
 > 2. 标志名称没有限制，建议大家参考模块命名，要有业务含义，不要随心而写
+
 > 3. 所有的自定义标志，建议大家在 pytest.ini 中进行统一管理和通过命令参数--strict-markers 进行授权(pytest 其实不强制)
+
 > 4. pytest 中的 markers 配置，相当于我们对业务的一种设计归类，尤其是大项目时非常重要
 
 ```python
@@ -252,6 +255,7 @@ PASSED
 修改成GBK即可。
 # 小结
 关于并未完全讲完的一些参数可以来这里直接CTRL + F搜索：[https://www.osgeo.cn/pytest/reference.html#ini-options-ref](https://www.osgeo.cn/pytest/reference.html#ini-options-ref)
+
 一定是pytest.ini文件吗？其他的配置文件不行吗。官方介绍到还有.toml，tox.ini，setup.cfg，其中setup.cfg是不被推荐使用的，官方文档这样说道：
 > 💥警告
 > 用法 setup.cfg 除非用于非常简单的用例，否则不推荐使用。 .cfg 文件使用不同于 pytest.ini 和 tox.ini 这可能会导致难以追踪的问题。如果可能，建议使用后一个文件，或者 pyproject.toml ，以保存pytest配置。
